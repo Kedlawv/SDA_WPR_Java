@@ -5,7 +5,7 @@ public class Zadania10 {
         int[] tabN = new int[size];
         for(int i=0; i<tabN.length; i++){
             tabN[i] = new Random().nextInt(51);
-            System.out.print(tabN[i] + " ");
+            System.out.printf("%2d ",tabN[i]);
         }
         System.out.println();
 
@@ -61,6 +61,23 @@ public class Zadania10 {
         return arrSum1 > arrSum2 ? arr1 : arr2; //Ternary operator. Krotsza forma if else
     }
 
+    static int[] merge(int[] arr1, int[] arr2){
+        int[] returnArr = new int[arr1.length + arr2.length];
+        for(int i = 0; i<returnArr.length; i++){
+            if(i<arr1.length){
+                returnArr[i] = arr1[i];
+            }else{
+                returnArr[i] = arr2[i-arr1.length];
+            }
+        }
+        System.out.println("Zlaczone tablice to: ");
+        for(int el : returnArr){
+            System.out.printf("%2d ",el); //printf to sformatowana wersja println , %2d znaczy int do dwoch znakow
+        }
+        System.out.println();
+        return returnArr;
+    }
+
     public static void varG(int[] varargs){
         for(int i : varargs){
             System.out.print(i);
@@ -85,11 +102,9 @@ public class Zadania10 {
 //        }
 
 //        getLarger(randArray(10),randArray(10));
+//        merge(randArray(5),randArray(5));
 
 
-//        Punkt punkt = new Punkt();
-//        punkt.wypiszX();
-//        punkt.wypiszY();
 //
 //        varG(new int[]{1,4,5,6,7,7,8});
 
