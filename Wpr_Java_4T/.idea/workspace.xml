@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4536affe-2860-44f3-b9ad-6fa5570396c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/sdacademy/exceptions/Bledy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/sdacademy/restauracja/Danie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/sdacademy/restauracja/Deser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/sdacademy/restauracja/DrugieDanie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/sdacademy/restauracja/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/sdacademy/restauracja/Zamowienie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/sdacademy/restauracja/Zupa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/sdacademy/restauracja/ZupaRybna.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/sdacademy/restauracja2/Danie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/sdacademy/restauracja2/Deser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/sdacademy/restauracja2/DrugieDanie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/sdacademy/restauracja2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/sdacademy/restauracja2/Zamowienie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/sdacademy/restauracja2/Zupa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/sdacademy/stringtest/StringTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/sdacademy/stringtest/StringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/sdacademy/wprowadzenie/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/sdacademy/wprowadzenie/Robot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaAdvLinda/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaAdvLinda/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaAdvLinda/src/PathEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaAdvLinda/src/PathEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/sdacademy/datacwiczenia/DataTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Wpr_Java_4T/pl/sdacademy/exceptions/Bledy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Wpr_Java_4T/pl/sdacademy/exceptions/Bledy.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,10 +19,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pl/sdacademy/exceptions/Bledy.java">
+        <entry file="file://$PROJECT_DIR$/src/pl/sdacademy/datacwiczenia/DataTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+            <state relative-caret-position="455">
+              <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,6 +70,7 @@
         <option value="$PROJECT_DIR$/src/pl/sdacademy/stringtest/StringTest.java" />
         <option value="$PROJECT_DIR$/src/pl/sdacademy/stringtest/StringUtils.java" />
         <option value="$PROJECT_DIR$/src/pl/sdacademy/exceptions/Bledy.java" />
+        <option value="$PROJECT_DIR$/src/pl/sdacademy/datacwiczenia/DataTest.java" />
       </list>
     </option>
   </component>
@@ -128,7 +113,7 @@
               <item name="Wpr_Java_4T" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sdacademy" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
+              <item name="datacwiczenia" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -158,7 +143,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Bledy">
+  <component name="RunManager" selected="Application.DataTest">
     <configuration name="Bledy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.sdacademy.exceptions.Bledy" />
       <module name="Wpr_Java_4T" />
@@ -172,12 +157,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.sdacademy.restauracja.Main" />
+    <configuration name="DataTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.sdacademy.datacwiczenia.DataTest" />
       <module name="Wpr_Java_4T" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.sdacademy.restauracja.*" />
+          <option name="PATTERN" value="pl.sdacademy.datacwiczenia.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -220,11 +205,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DataTest" />
         <item itemvalue="Application.Bledy" />
         <item itemvalue="Application.StringTest" />
         <item itemvalue="Application.Person" />
         <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -239,11 +224,18 @@
       <option name="presentableId" value="Default" />
       <updated>1557559236646</updated>
     </task>
+    <task id="LOCAL-00001" summary="Ostatni weekend wprowadzenia">
+      <created>1557665310782</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1557665310782</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25321338" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -255,7 +247,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32974428" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32974428" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -273,6 +265,10 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ostatni weekend wprowadzenia" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ostatni weekend wprowadzenia" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/pl/sdacademy/wprowadzenie/Robot.java">
@@ -322,27 +318,6 @@
           <folding>
             <element signature="e#96#97#0" expanded="true" />
             <element signature="e#132#133#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/sdacademy/restauracja/Zamowienie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-          <folding>
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#704#705#0" expanded="true" />
-            <element signature="e#738#739#0" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#837#838#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
-            <element signature="e#896#897#0" expanded="true" />
-            <element signature="e#937#938#0" expanded="true" />
-            <element signature="e#971#972#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -506,6 +481,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
           <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/sdacademy/restauracja/Zamowienie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/sdacademy/datacwiczenia/DataTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
