@@ -1,5 +1,7 @@
 package pl.sdacademy.progr1T1;
 
+import java.util.*;
+
 public class Main {
     public static void main(String[] args) {
         //System.out.println(pallMod(123));
@@ -12,19 +14,88 @@ public class Main {
         //System.out.println(isPerfectNumber(28));
         //findPerfectNumbers(100000);
 
-        Person person = new Person("Jan", "Kowalski",Sex.MAN, 68);
-        Person person1 = new Person("Anna", "Jankowska", Sex.WOMAN, 34);
+//        Person person = new Person("Jan", "Kowalski",Sex.MAN, 68);
+//        Person person1 = new Person("Anna", "Jankowska", Sex.WOMAN, 34);
+//
+//        Person personPolish3 = new Polish("Adam", "Miech", Sex.MAN, 40, 32456,
+//                "Polish", 4);
+//
+//
+//        Polish personPolish1 = new Polish("Adam", "Miech", Sex.MAN, 40, 35456,
+//                "Polish", 4);
+//        Polish personPolish2 = new Polish("Ola", "Lubomirska", Sex.WOMAN, 62, 346457,
+//                "Polish", 2);
+//
+////        System.out.println(person);
+////        System.out.println(person1);
+////        System.out.println(personPolish1);
+////        System.out.println(personPolish2);
+//
+//        List<Person> personList = new ArrayList<>();
+//
+//        personList.add(person);
+//        personList.add(person1);
+//        personList.add(personPolish1);
+//        personList.add(personPolish2);
+//
+//
+//        List<Polish> polishList = new ArrayList<>();
+//
+//        polishList.add(personPolish1);
+//        polishList.add(personPolish2);
+//
+////        for(Person per : personList){
+////            System.out.println(per);
+////        }
+//
+//        Map<Integer,Polish> polishMap = new HashMap<>();
+//
+//        polishMap.put(((Polish)personPolish3).getPesel(), (Polish)personPolish3);
+//        polishMap.put(personPolish1.getPesel(), personPolish1);
+//
+//        System.out.println(((Polish) personPolish3).getPesel());
 
-        System.out.println(person);
-        System.out.println(person1);
 
-        Polish personPolish1 = new Polish("Adam", "Miech", Sex.MAN, 40,
-                "Polish", 4);
-        Polish personPolish2 = new Polish("Ola", "Lubomirska", Sex.WOMAN, 62,
-                "Polish", 2);
+//        for(int pesel : polishMap.keySet()){
+//            System.out.println(pesel);
+//            System.out.println(polishMap.get(pesel));
+//        }
 
-        System.out.println(personPolish1);
-        System.out.println(personPolish2);
+//        Iterator<Integer> iteruj = polishMap.keySet().iterator();
+//
+//        while(iteruj.hasNext()){
+//            int next = iteruj.next();
+//            System.out.println(next);
+//            System.out.println(polishMap.get(next));
+//        }
+//
+//        Set<Integer> peselSet = polishMap.keySet();
+//        Set<Polish> personSet = (Set)polishMap.values();
+
+        Set<Karta> talia = new HashSet<>();
+
+        for(ColorCard kolor : ColorCard.values()){
+            for(WartosciKart wartosc : WartosciKart.values()){
+                if(kolor == ColorCard.JOKER_BLACK || kolor == ColorCard.JOKER_RED){
+                    talia.add(new Karta(kolor, WartosciKart.JOKER));
+                    break;
+                }
+                if(wartosc == WartosciKart.JOKER){
+                    continue;
+                }
+                talia.add(new Karta(kolor, wartosc));
+            }
+        }
+
+        for(Karta karta : talia){
+            System.out.println(karta);
+        }
+
+
+
+
+
+
 
 
     }

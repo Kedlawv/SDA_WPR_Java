@@ -3,15 +3,19 @@ package pl.sdacademy.progr1T1;
 public class Polish extends Person {
 
 
-    public Polish(String firstName, String lastName, Sex sex, int age,
+    private String nationality;
+    private int noChildren;
+    private int pesel;
+
+
+
+    public Polish(String firstName, String lastName, Sex sex, int age, int pesel,
                   String nationality, int noChildren) {
         super(firstName, lastName, sex, age);
         this.nationality = nationality;
         this.noChildren = noChildren;
+        this.pesel = pesel;
     }
-
-    private String nationality;
-    private int noChildren;
 
     @Override
     public boolean isRetired() {
@@ -27,7 +31,11 @@ public class Polish extends Person {
 
     @Override
     public String toString() {
-        return super.toString() + "\nNationality: " + nationality + "\nNumber of children: "
+        return super.toString() + "\nPesel: " + pesel+ "\nNationality: " + nationality + "\nNumber of children: "
                 + noChildren + "\nKarta duzej rodziny: " + enabledKDR();
+    }
+
+    public int getPesel() {
+        return pesel;
     }
 }

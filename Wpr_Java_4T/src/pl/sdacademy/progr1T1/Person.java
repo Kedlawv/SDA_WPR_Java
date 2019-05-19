@@ -6,8 +6,16 @@ public class Person {
     private String firstName, lastName;
     private int age;
 
-    public boolean isRetired (){
-        if((this.sex == Sex.MAN && age > 67) || (this.sex == Sex.WOMAN && age > 65)){
+    public Person(String firstName, String lastName, Sex sex, int age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.sex = sex;
+        this.age = age;
+
+    }
+
+    public boolean isRetired() {
+        if ((this.sex == Sex.MAN && age > 67) || (this.sex == Sex.WOMAN && age > 65)) {
             return true;
         }
         return false;
@@ -15,16 +23,11 @@ public class Person {
 
     @Override
     public String toString() {
-        return "\nImie: " + firstName + "\nNazwisko: " + lastName + "\nWiek: " + age + "\nPlec: "
-                + sex + "\nJest na emeryturze: " + isRetired() ;
+        return "\nImie: " + firstName + "\nNazwisko: " + lastName  + "\nWiek: " + age + "\nPlec: "
+                + sex.getPolishName() +  (isRetired() ? "\nEmeryt" : "");
     }
 
-    public Person(String firstName, String lastName, Sex sex, int age) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.sex = sex;
-        this.age = age;
-    }
+
 
     public String getFirstName() {
         return firstName;
@@ -57,7 +60,6 @@ public class Person {
     public void setAge(int age) {
         this.age = age;
     }
-
 
 
 }
