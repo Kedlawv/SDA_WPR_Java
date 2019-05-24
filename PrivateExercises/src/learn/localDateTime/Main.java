@@ -1,6 +1,7 @@
 package learn.localDateTime;
 
 import java.time.*;
+import java.time.format.DateTimeFormatter;
 import java.time.format.TextStyle;
 import java.time.temporal.TemporalAdjuster;
 import java.time.temporal.TemporalAdjusters;
@@ -61,6 +62,17 @@ public class Main {
         LocalDateTime ldt2 = LocalDateTime.of(2015, 11, 23, 22, 5);
         System.out.println(ldt2);
         System.out.println(ldt2.plusDays(20));
+
+        // https://docs.oracle.com/javase/tutorial/datetime/iso/datetime.html
+
+        DateTimeFormatter format = DateTimeFormatter.ofPattern("d MMM yyyy -- HH:mm z");
+        LocalDateTime ldt3 = LocalDateTime.of(2019,5,12,19,30);
+        ZoneId zid = ZoneId.of("Poland");
+        ZonedDateTime zdt = ZonedDateTime.of(ldt3,zid);
+        String out1 = zdt.format(format);
+
+        System.out.println("Not formatted: " + zdt);
+        System.out.println("Formatted : " + out1 + " " + zid);
 
     }
 
