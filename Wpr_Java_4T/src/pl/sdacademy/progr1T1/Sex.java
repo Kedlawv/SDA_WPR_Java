@@ -1,8 +1,8 @@
 package pl.sdacademy.progr1T1;
 
 public enum Sex {
-    MAN("M", "man","kobieta"),
-    WOMAN("F","woman","mezczyzna");
+    MAN("M", "man","mezczyzna"),
+    WOMAN("F","woman","kobieta");
 
     private String shortName;
     private String englishName;
@@ -24,5 +24,14 @@ public enum Sex {
 
     public String getPolishName() {
         return polishName;
+    }
+
+    public static Sex getByShortName(String shortName){
+        for(Sex sex : Sex.values()){
+            if (sex.shortName.equals(shortName)){
+                return sex;
+            }
+        }
+        return null;
     }
 }

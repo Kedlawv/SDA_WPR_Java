@@ -1,18 +1,29 @@
 package pl.sdacademy.progr1T1;
 
-public class Person {
+public abstract class Person implements Driver {
 
     private Sex sex;
     private String firstName, lastName;
     private int age;
+    private boolean hasDrivingLicence;
 
     public Person(String firstName, String lastName, Sex sex, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.sex = sex;
         this.age = age;
+        this.hasDrivingLicence = false;
+    }
+
+    public Person(String firstName, String lastName, int age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.hasDrivingLicence = false;
 
     }
+
+    public abstract int getIdentity();
 
     public boolean isRetired() {
         if ((this.sex == Sex.MAN && age > 67) || (this.sex == Sex.WOMAN && age > 65)) {
@@ -23,10 +34,9 @@ public class Person {
 
     @Override
     public String toString() {
-        return "\nImie: " + firstName + "\nNazwisko: " + lastName  + "\nWiek: " + age + "\nPlec: "
-                + sex.getPolishName() +  (isRetired() ? "\nEmeryt" : "");
+        return "\nImie: " + firstName + "\nNazwisko: " + lastName + "\nWiek: " + age + "\nPlec: "
+                + sex.getPolishName() + (isRetired() ? "\nEmeryt" : "");
     }
-
 
 
     public String getFirstName() {
@@ -61,5 +71,11 @@ public class Person {
         this.age = age;
     }
 
+    public boolean hasDrivingLicence() {
+        return hasDrivingLicence;
+    }
 
+    public void setHasDrivingLicence(boolean hasDrivingLicence) {
+        this.hasDrivingLicence = hasDrivingLicence;
+    }
 }

@@ -72,30 +72,56 @@ public class Main {
 //        Set<Integer> peselSet = polishMap.keySet();
 //        Set<Polish> personSet = (Set)polishMap.values();
 
-        Set<Karta> talia = new HashSet<>();
+//        Set<Karta> talia = new HashSet<>();
+//
+//        for(ColorCard kolor : ColorCard.values()){
+//            for(WartosciKart wartosc : WartosciKart.values()){
+//                if(kolor == ColorCard.JOKER_BLACK || kolor == ColorCard.JOKER_RED){
+//                    talia.add(new Karta(kolor, WartosciKart.JOKER));
+//                    break;
+//                }
+//                if(wartosc == WartosciKart.JOKER){
+//                    continue;
+//                }
+//                talia.add(new Karta(kolor, wartosc));
+//            }
+//        }
+//
+//        for(Karta karta : talia){
+//            System.out.println(karta);
+//        }
 
-        for(ColorCard kolor : ColorCard.values()){
-            for(WartosciKart wartosc : WartosciKart.values()){
-                if(kolor == ColorCard.JOKER_BLACK || kolor == ColorCard.JOKER_RED){
-                    talia.add(new Karta(kolor, WartosciKart.JOKER));
-                    break;
-                }
-                if(wartosc == WartosciKart.JOKER){
-                    continue;
-                }
-                talia.add(new Karta(kolor, wartosc));
-            }
-        }
+        Polish polPer1 = new Polish("Kazimierz", "Dzieciol", Sex.MAN, 44, 23456
+                , 3);
+        Polish polPer4 = new Polish("Adam", "Miech", Sex.MAN, 40, 35456
+                , 4);
+        Polish polPer3 = new Polish("Kazimierz", "Dzieciol", Sex.MAN, 44, 23456
+                , 3);
+        Polish polPer2 = polPer1;
+        System.out.println(polPer1.equals(polPer2));
+        System.out.println(polPer1.equals(polPer3));
+        System.out.println(polPer4.equals(polPer1));
 
-        for(Karta karta : talia){
-            System.out.println(karta);
-        }
+        System.out.println(polPer2.getSex().getByShortName("M"));
 
+        Person polPer5 = new Polish("Genowefa", "Zawada", 33, 2,
+                1243235);
+        polPer5.setSex(Sex.getByShortName("F"));
+        System.out.println(polPer5.getSex());
 
+        System.out.println(Polish.getInstanceNumber());
 
+        Person engPer1 = new English("John", "Smith", Sex.MAN, 39,
+                0, 32523);
+        System.out.println(engPer1);
 
+        Race race = new Race("Silverstone",10);
+        race.addDriver(engPer1);
+        race.removeDriver(engPer1);
+        race.removeDriver(engPer1);
 
-
+        System.out.println("__________________");
+        System.out.println(race.getDrivers());
 
 
     }
@@ -298,9 +324,9 @@ public class Main {
         return sum == num;
     }
 
-    public static void findPerfectNumbers(int range){
-        for(int i = 1 ; i <= range; i++){
-            if(isPerfectNumber(i)){
+    public static void findPerfectNumbers(int range) {
+        for (int i = 1; i <= range; i++) {
+            if (isPerfectNumber(i)) {
                 System.out.print(i + " ");
             }
         }
