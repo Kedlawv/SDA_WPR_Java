@@ -104,8 +104,11 @@ public class Main {
 
         System.out.println(polPer2.getSex().getByShortName("M"));
 
-        Person polPer5 = new Polish("Genowefa", "Zawada", 33, 2,
-                1243235);
+        Person polPer5 = new Polish("Genowefa", "Zawada", Sex.WOMAN, 53, 235236,
+                2);
+        Person polPer6 = new Polish("Ewa", "Kopiko", Sex.WOMAN, 39, 1235346,
+                1);
+
         polPer5.setSex(Sex.getByShortName("F"));
         System.out.println(polPer5.getSex());
 
@@ -113,17 +116,126 @@ public class Main {
 
         Person engPer1 = new English("John", "Smith", Sex.MAN, 39,
                 0, 32523);
+        Person engPer2 = new English("Jeremy", "Clarkson", Sex.MAN, 60,
+                0, 38523);
+
         System.out.println(engPer1);
 
-        Race race = new Race("Silverstone",10);
+        Race race = new Race("Silverstone", 10);
         race.addDriver(engPer1);
         race.removeDriver(engPer1);
         race.removeDriver(engPer1);
 
         System.out.println("__________________");
-        System.out.println(race.getDrivers());
+        //System.out.println(race.getDrivers());
+
+        List<Person> nowaLista = new ArrayList<>();
+        nowaLista.add(polPer1);
+        nowaLista.add(polPer4);
+        nowaLista.add(polPer4);
+        nowaLista.add(polPer4);
+        nowaLista.add(polPer5);
+        nowaLista.add(engPer1);
+        nowaLista.add(polPer6);
+
+        System.out.println("__________Nowa Lista");
+        System.out.println(nowaLista);
+
+        System.out.println();
+        System.out.println(nowaLista.getClass());
+        nowaLista = new LinkedList<>(nowaLista);
+        System.out.println(nowaLista.getClass());
+
+        Set<Person> nowySet = new HashSet<>();
+        nowySet.add(polPer1);
+        nowySet.add(polPer2);
+        nowySet.add(polPer3);
+        nowySet.add(polPer4);
+        System.out.println(nowySet.getClass());
+        nowySet = new LinkedHashSet<>(nowySet);
+        System.out.println(nowySet.getClass());
+
+        nowySet = new HashSet<>(nowaLista);
+        System.out.println(nowySet);
+
+        List<Set<Person>> listaSetow = new ArrayList<>();
+        Set<Person> set1 = new HashSet<>(nowaLista);
+        Set<Person> set2 = new HashSet<>(nowaLista);
+        listaSetow.add(set1);
+        listaSetow.add(set2);
+
+        System.out.println();
+        System.out.println("Lista setow , podwojna petla foreach");
+        for (Set<Person> sp : listaSetow) {
+            for (Person p : sp) {
+                System.out.println(p);
+            }
+        }
+
+        Map<Integer, Person> nowaMapa = new HashMap<>();
+        for (Person p : nowaLista) {
+            nowaMapa.put(p.getIdentity(), p);
+        }
+
+        System.out.println("Drukuj mape: \n -------------------------");
+        System.out.println(nowaMapa);
+
+        System.out.println("\n\n\nPrzed posortowaniem");
+        System.out.println(nowaLista);
+
+        Collections.sort(nowaLista);
+        System.out.println("\n\n\nPo posortowaniu");
+        System.out.println(nowaLista);
+
+        List<Race> listaRace = new ArrayList<>();
+
+        listaRace.add(new Race("Dubai", 14));
+        listaRace.add(new Race("Syndey", 25));
+        listaRace.add(new Race("Warsaw", 18));
+
+        System.out.println("\n\n\n\n-----------------------------------");
+        System.out.println("listaRace przed sortowaniem");
+        System.out.println(listaRace);
+
+        Collections.sort(listaRace);
+
+        System.out.println("\nlistaRace po sortowaniu");
+        System.out.println(listaRace);
+
+        Collections.sort(nowaLista, new PersonSortedBySexAndName());
+
+        System.out.println("\n\n\n\nnowaLista po posortowaniu przez PersonSortedBySexAndName: ");
+        System.out.println(nowaLista);
+
+        Collections.sort(nowaLista, new PersonSortedBySexAndAge());
+        System.out.println("\n\n\n\nnowaLista po posortowaniu przez PersonSortedBySexAndAge: ");
+        System.out.println(nowaLista);
+
+        Race race1 = listaRace.get(0);
+
+        race1.setDriverList(nowaLista);
+        race1.addDriverUSet(engPer2);
+        System.out.println("__________________________________________");
+        System.out.println("Lista kierowcow : ");
+        System.out.println(race1.getDrivers());
+
+        Map<Integer,Person> personMap = new HashMap();
+        for(Person p : nowaLista){
+            personMap.put(p.getIdentity(),p);
+        }
+
+        System.out.println("\n\n\n\n\n************************************************");
+        System.out.println("Mapa osob: ");
+        for(int klucz : nowaMapa.keySet()){
+            System.out.println(nowaMapa.get(klucz));
+        }
 
 
+
+
+
+
+///////////////////////////////////////////////////////////////////////
     }
 
     public static boolean pallindrome(int num) {

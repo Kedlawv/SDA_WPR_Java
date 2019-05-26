@@ -1,6 +1,6 @@
 package pl.sdacademy.progr1T1;
 
-public abstract class Person implements Driver {
+public abstract class Person implements Driver, Comparable<Person> {
 
     private Sex sex;
     private String firstName, lastName;
@@ -23,6 +23,11 @@ public abstract class Person implements Driver {
 
     }
 
+    @Override
+    public int compareTo(Person o) {
+        return age - o.getAge();
+    }
+
     public abstract int getIdentity();
 
     public boolean isRetired() {
@@ -34,7 +39,7 @@ public abstract class Person implements Driver {
 
     @Override
     public String toString() {
-        return "\nImie: " + firstName + "\nNazwisko: " + lastName + "\nWiek: " + age + "\nPlec: "
+        return "\n---------------\nImie: " + firstName + "\nNazwisko: " + lastName + "\nWiek: " + age + "\nPlec: "
                 + sex.getPolishName() + (isRetired() ? "\nEmeryt" : "");
     }
 
