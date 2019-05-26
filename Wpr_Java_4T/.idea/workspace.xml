@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4536affe-2860-44f3-b9ad-6fa5570396c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pl/sdacademy/progr1T1/PersonSortedBySexAndAge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/sdacademy/progr1T1/PersonSortedBySexAndName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/sdacademy/progr1T1/RaceResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/sdacademy/progr1T1/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Wpr_Java_4T/pl/sdacademy/progr1T1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Wpr_Java_4T/pl/sdacademy/progr1T1/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Wpr_Java_4T/pl/sdacademy/progr1T1/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Wpr_Java_4T/pl/sdacademy/progr1T1/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Wpr_Java_4T/pl/sdacademy/progr1T1/Race.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Wpr_Java_4T/pl/sdacademy/progr1T1/Race.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/sdacademy/progr1T1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/sdacademy/progr1T1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/sdacademy/progr1T1/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/sdacademy/progr1T1/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/sdacademy/progr1T1/Race.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/sdacademy/progr1T1/Race.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pl/sdacademy/progr1T1/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="228" column="9" lean-forward="true" selection-start-line="228" selection-start-column="9" selection-end-line="228" selection-end-column="9" />
+            <state relative-caret-position="96">
+              <caret line="232" selection-start-line="232" selection-end-line="232" />
             </state>
           </provider>
         </entry>
@@ -92,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pl/sdacademy/progr1T1/Race.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="102" column="29" selection-start-line="102" selection-start-column="29" selection-end-line="102" selection-end-column="29" />
+            <state relative-caret-position="24">
+              <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#550#551#0" expanded="true" />
@@ -379,7 +369,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.14974293" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -815,17 +804,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/sdacademy/progr1T1/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="228" column="9" lean-forward="true" selection-start-line="228" selection-start-column="9" selection-end-line="228" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pl/sdacademy/progr1T1/Race.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="102" column="29" selection-start-line="102" selection-start-column="29" selection-end-line="102" selection-end-column="29" />
+        <state relative-caret-position="24">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#550#551#0" expanded="true" />
@@ -837,6 +819,13 @@
             <element signature="e#3608#3609#0" expanded="true" />
             <element signature="e#3725#3726#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/sdacademy/progr1T1/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="232" selection-start-line="232" selection-end-line="232" />
         </state>
       </provider>
     </entry>
