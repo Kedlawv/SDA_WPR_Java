@@ -2,9 +2,13 @@ package learn.localDateTime;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 import java.time.format.TextStyle;
+import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjuster;
 import java.time.temporal.TemporalAdjusters;
+import java.time.temporal.TemporalUnit;
+import java.util.Formatter;
 import java.util.Locale;
 
 public class Main {
@@ -73,6 +77,39 @@ public class Main {
 
         System.out.println("Not formatted: " + zdt);
         System.out.println("Formatted : " + out1 + " " + zid);
+        System.out.println("\n\n\n_________________Instant Class_____________________");
+
+        Instant timeStamp = Instant.now();
+        System.out.println(timeStamp);
+        Instant timeStamp2 = Instant.now().plusSeconds(60*60+15);
+        System.out.println(timeStamp2);
+        long secondsFromEpoch = Instant.ofEpochSecond(0l).until(Instant.now(), ChronoUnit.SECONDS);
+        System.out.println(secondsFromEpoch);
+
+        timeStamp2 = timeStamp2.plus(2,ChronoUnit.HOURS);
+        System.out.println(timeStamp2);
+
+        LocalDateTime ldtInst = LocalDateTime.ofInstant(timeStamp2,ZoneId.systemDefault());
+        System.out.println(ldt);
+
+        System.out.println("\n\n\n\n______________Parse and Format____________");
+
+        String inputString = new String("24.06.1985");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
+        String inputStringFromDate = LocalDate.now().toString();
+
+
+        try {
+            LocalDate pfDate = LocalDate.parse(inputString,formatter);
+            System.out.println(pfDate);
+        } catch (DateTimeParseException e) {
+            System.out.printf("%s in not parsable%n.", inputString);
+            e.printStackTrace();
+        }catch (DateTimeException e){
+            System.out.printf("%s is not a valid pattern");
+        }
+
+
 
     }
 
