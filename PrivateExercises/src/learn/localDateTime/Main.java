@@ -106,7 +106,7 @@ public class Main {
             System.out.printf("%s in not parsable%n.", inputString);
             e.printStackTrace();
         }catch (DateTimeException e){
-            System.out.printf("%s is not a valid pattern");
+            System.out.printf("%s is not a valid pattern?");
         }
 
 
