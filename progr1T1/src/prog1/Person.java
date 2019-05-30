@@ -1,3 +1,6 @@
+//package prog1;
+
+
 package prog1;
 
 public abstract class Person implements Driver, Comparable<Person> {

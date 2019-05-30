@@ -1,4 +1,4 @@
-package prog1;
+package prog1;//package prog1;
 
 public enum Sex {
     MAN("M", "man","mezczyzna"),
