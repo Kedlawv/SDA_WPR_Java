@@ -1,8 +1,8 @@
 public class OszczednosciowyRachunek extends Rachunek {
 
-    private static final String rodzaj = "Oszczednosciowe";
+    private static RodzajKonta rodzajKonta = RodzajKonta.OSZCZEDNOSCIOWE;
 
     public OszczednosciowyRachunek(String nazwaBanku) {
-        super(nazwaBanku, rodzaj);
+        super(nazwaBanku, rodzajKonta);
     }
 }

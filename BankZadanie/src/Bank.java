@@ -16,7 +16,12 @@ public class Bank {
     }
 
     public void dodajKlienta(Klient klient) {
-        klientList.add(klient);
+        if (!klientList.contains(klient)) {
+            klientList.add(klient);
+            System.out.println("Klient " + klient + "zostal dodany");
+        } else {
+            System.out.println("Klient " + klient + " juz istnieje.");
+        }
     }
 
     public void usunKlienta(Klient klient) throws ZlyStan {
