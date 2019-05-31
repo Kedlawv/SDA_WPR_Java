@@ -10,7 +10,7 @@ public abstract class Rachunek {
         stan = 0;
     }
 
-    public Rachunek(String nazwaBanku, String rodzaj){
+    public Rachunek(String nazwaBanku, RodzajKonta rodzaj){
         IBAN = nazwaBanku + accNo + rodzaj;
         accNo++;
     }

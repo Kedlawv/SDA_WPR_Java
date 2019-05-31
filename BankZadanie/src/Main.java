@@ -12,6 +12,8 @@ public class Main {
         Rachunek nowyRachunek = (new OszczednosciowyRachunek(bank.getNazwaBanku()));
         Klient nowyKlient = new Klient("Piotr", "Jablonski",nowyRachunek);
         bank.dodajKlienta(nowyKlient);
+        bank.dodajKlienta(nowyKlient);
+
 
         System.out.println(bank.getKlientList());
         bank.printKlientListZSaldo();
