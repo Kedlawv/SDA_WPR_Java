@@ -4,10 +4,7 @@ import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.time.format.TextStyle;
-import java.time.temporal.ChronoUnit;
-import java.time.temporal.TemporalAdjuster;
-import java.time.temporal.TemporalAdjusters;
-import java.time.temporal.TemporalUnit;
+import java.time.temporal.*;
 import java.util.Formatter;
 import java.util.Locale;
 
@@ -109,7 +106,21 @@ public class Main {
             System.out.printf("%s is not a valid pattern?");
         }
 
+        System.out.println("\n-------------Temporal Adjusters ----------------------");
 
+        LocalDate dateTA = LocalDate.of(2000, Month.OCTOBER, 15);
+        DayOfWeek dowTA = date.getDayOfWeek();
+
+        System.out.printf("%s is on %s%n", dateTA, dowTA);
+        System.out.printf("First day of month is %s%n", dateTA.with(TemporalAdjusters.firstDayOfMonth()));
+        System.out.printf("First Monday of month is %s%n",
+                dateTA.with(TemporalAdjusters.firstInMonth(DayOfWeek.MONDAY)));
+        System.out.printf("Next Tuesday is %s%n",
+                dateTA.with(TemporalAdjusters.next(DayOfWeek.TUESDAY)));
+
+        System.out.println("\n_______________Temporal Query______________");
+        TemporalQuery<TemporalUnit> query = TemporalQueries.precision();
+        System.out.printf("\nPrecision of LocalDate is %s%n", dateTA.query(query));
 
 
 
