@@ -2,16 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59ee313a-1c21-4c1d-9f4c-b9eb2720972b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../BankZadanie/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BankZadanie/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankZadanie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BankZadanie/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankZadanie/out/production/BankZadanie/Bank.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankZadanie/out/production/BankZadanie/Klient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankZadanie/out/production/BankZadanie/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankZadanie/out/production/BankZadanie/OszczednosciowyRachunek.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankZadanie/out/production/BankZadanie/ROR.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankZadanie/out/production/BankZadanie/Rachunek.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankZadanie/out/production/BankZadanie/RodzajKonta.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankZadanie/out/production/BankZadanie/ZlyStan.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/learn/localDateTime/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/learn/localDateTime/Main.java" afterDir="false" />
@@ -31,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/learn/localDateTime/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="120" column="30" selection-start-line="120" selection-start-column="30" selection-end-line="120" selection-end-column="30" />
+            <state relative-caret-position="-1231">
+              <caret line="145" column="30" selection-start-line="145" selection-start-column="30" selection-end-line="145" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,7 +49,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="100" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -154,9 +144,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13239075" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12953092" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -167,8 +157,8 @@
       <window_info id="simpleUML" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32839838" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32827735" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -176,7 +166,6 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32936078" />
-      <window_info anchor="right" id="PlantUML" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -185,6 +174,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="PlantUML" order="8" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
@@ -216,12 +206,45 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout-to-restore>
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>{
+    ChronoUnit.DAYS.between(date, dateEnd);
+}</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(ChronoUnit.DAYS.between(date,dateEnd) &gt; -1);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ChronoUnit.DAYS.between(date,dateEnd) &gt; -1</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ChronoUnit.DAYS.between(date,dateEnd) &gt; -1;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>ChronoUnit.DAYS.between(date,dateEnd) &gt; -1</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/time/format/DateTimeFormatter.java" />
     <entry file="file://$PROJECT_DIR$/src/learn/localDateTime/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="120" column="30" selection-start-line="120" selection-start-column="30" selection-end-line="120" selection-end-column="30" />
+        <state relative-caret-position="-1231">
+          <caret line="145" column="30" selection-start-line="145" selection-start-column="30" selection-end-line="145" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
