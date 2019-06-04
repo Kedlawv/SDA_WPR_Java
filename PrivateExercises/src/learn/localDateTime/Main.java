@@ -5,8 +5,6 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.time.format.TextStyle;
 import java.time.temporal.*;
-import java.util.Formatter;
-import java.util.List;
 import java.util.Locale;
 
 public class Main {
@@ -134,18 +132,23 @@ public class Main {
         System.out.printf("I am %s years old %s months and %s days, that is %s days total%n",
                 p.getYears(), p.getMonths(), p.getDays(), p2);
 
-        System.out.println("\n_____________Excercise 1______________");
+        System.out.println("\n_____________Exercise 1______________");
 
         reportLengthOfMonthsInGivenYear(2000);
         reportLengthOfMonthsInGivenYearJava(2000);
 
-        System.out.println("\n________________Excercise 2 ______________");
+        System.out.println("\n________________Exercise 2 ______________");
         getMondaysOfMonth(Month.JUNE);
         System.out.println("_____________While loop imp_______________");
         getMondaysOfMonthWhileLoop(Month.JUNE);
         System.out.println("\n_____________Java tut imp_________________");
         getMondaysOfMonthJava(Month.JUNE);
 
+        System.out.println("_____________Exercise 3 ___________________");
+        isFriday13th(LocalDate.of(2019,Month.SEPTEMBER,13));
+        System.out.println(queryFrom(LocalDate.of(2019,Month.SEPTEMBER,13)));
+        isFriday13th(LocalDate.now());
+        System.out.println(queryFrom(LocalDate.now()));
 
     }
 
@@ -211,6 +214,27 @@ public class Main {
 
         }
 
+    }
+
+    // 3. Write an example that tests whether a given date occurs on Friday the 13th.
+
+    public static boolean isFriday13th(LocalDate date){
+        DayOfWeek dof = date.getDayOfWeek();
+        if(date.getDayOfMonth() == 13 && dof == DayOfWeek.FRIDAY){
+            System.out.printf("%s is Friday 13th%n",date);
+            return true;
+        }else{
+            System.out.printf("%s is not Friday 13th%n", date);
+            return false;
+        }
+    }
+
+    // Java tut implementation
+
+    public static boolean queryFrom(TemporalAccessor date) {
+
+        return ((date.get(ChronoField.DAY_OF_MONTH) == 13) &&
+                (date.get(ChronoField.DAY_OF_WEEK) == 5));
     }
 
 
