@@ -26,13 +26,15 @@ public class Bank {
 
     public void usunKlienta(Klient klient) throws ZlyStan {
         System.out.println(klient);
-        if (klient.getRachunekList().isEmpty()) {
-            klientList.remove(klient);
-            System.out.print("zostal usuniety\n");
-        } else {
-            System.out.println("NIE zostal usuniety\n");
-            System.out.println("Lista kont nie jest pusta");
-            throw new ZlyStan();
+        if (klientList.contains(klient)) {
+            if (klient.getRachunekList().isEmpty()) {
+                klientList.remove(klient);
+                System.out.print("zostal usuniety\n");
+            } else {
+                System.out.println("NIE zostal usuniety\n");
+                System.out.println("Lista kont nie jest pusta");
+                throw new ZlyStan();
+            }
         }
     }
 
