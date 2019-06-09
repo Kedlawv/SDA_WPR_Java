@@ -1,4 +1,4 @@
-package simpleForm;
+package JavaFx.src.simpleForm;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
