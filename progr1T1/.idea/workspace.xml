@@ -2,33 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51b0e314-548b-45a3-b276-e61ddcbb9edc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../PrivateExercises/src/streamLambda/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PrivateExercises/src/streamLambda/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PrivateExercises/src/streamLambda/PersonAgeComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankZadanie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BankZadanie/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateExercises/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PrivateExercises/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateExercises/JavaFx/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PrivateExercises/src/JavaFx/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateExercises/JavaFx/.idea/description.html" beforeDir="false" afterPath="$PROJECT_DIR$/../PrivateExercises/src/JavaFx/.idea/description.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateExercises/JavaFx/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PrivateExercises/src/JavaFx/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateExercises/JavaFx/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PrivateExercises/src/JavaFx/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateExercises/JavaFx/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PrivateExercises/src/JavaFx/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateExercises/JavaFx/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PrivateExercises/src/JavaFx/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateExercises/JavaFx/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PrivateExercises/src/JavaFx/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateExercises/JavaFx/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PrivateExercises/src/JavaFx/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateExercises/JavaFx/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PrivateExercises/src/JavaFx/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateExercises/JavaFx/JavaFx.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../PrivateExercises/src/JavaFx/JavaFx.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateExercises/JavaFx/out/production/JavaFx/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PrivateExercises/src/JavaFx/out/production/JavaFx/sample/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateExercises/JavaFx/out/production/JavaFx/sample/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PrivateExercises/src/JavaFx/out/production/JavaFx/sample/Main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateExercises/JavaFx/out/production/JavaFx/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PrivateExercises/src/JavaFx/out/production/JavaFx/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateExercises/JavaFx/out/production/JavaFx/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../PrivateExercises/src/JavaFx/out/production/JavaFx/sample/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateExercises/JavaFx/out/production/JavaFx/simpleForm/SimpleForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PrivateExercises/src/JavaFx/out/production/JavaFx/simpleForm/SimpleForm$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateExercises/JavaFx/out/production/JavaFx/simpleForm/SimpleForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PrivateExercises/src/JavaFx/out/production/JavaFx/simpleForm/SimpleForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateExercises/JavaFx/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PrivateExercises/src/JavaFx/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateExercises/JavaFx/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PrivateExercises/src/JavaFx/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateExercises/JavaFx/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../PrivateExercises/src/JavaFx/src/sample/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateExercises/JavaFx/src/simpleForm/SimpleForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PrivateExercises/src/JavaFx/src/simpleForm/SimpleForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/progr1T1/prog1T3Generics/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/progr1T1/prog1T3Generics/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/prog1T3Generics/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/prog1T3Generics/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -46,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/prog1T3Generics/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2775">
-              <caret line="127" column="33" selection-start-line="127" selection-start-column="33" selection-end-line="127" selection-end-column="33" />
+            <state relative-caret-position="1757">
+              <caret line="120" column="5" lean-forward="true" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,7 +31,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/prog1T3Generics/Team.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="912">
+            <state relative-caret-position="720">
               <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
               <folding>
                 <element signature="e#471#472#0" expanded="true" />
@@ -95,7 +68,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/prog1T3Generics/League.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1560">
+            <state relative-caret-position="1368">
               <caret line="71" column="54" selection-start-line="71" selection-start-column="54" selection-end-line="71" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -154,8 +127,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -172,6 +143,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -250,8 +223,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26413882" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2673522" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -350,8 +324,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/prog1T3Generics/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2775">
-          <caret line="127" column="33" selection-start-line="127" selection-start-column="33" selection-end-line="127" selection-end-column="33" />
+        <state relative-caret-position="1757">
+          <caret line="120" column="5" lean-forward="true" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -360,7 +334,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/prog1T3Generics/Team.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
+        <state relative-caret-position="720">
           <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
           <folding>
             <element signature="e#471#472#0" expanded="true" />
@@ -391,7 +365,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/prog1T3Generics/League.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
+        <state relative-caret-position="1368">
           <caret line="71" column="54" selection-start-line="71" selection-start-column="54" selection-end-line="71" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
