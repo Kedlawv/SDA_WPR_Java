@@ -2,13 +2,11 @@ package streamLambda;
 
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 import static streamLambda.PersonsDataProcessor.*;
 
@@ -62,13 +60,13 @@ public class Main {
         });// Same as Local but this is Anonymous directly in the method call
 
         printPersonsWithPredicate(personList, p ->
-             p.gender == Person.Sex.MALE && p.getAge() >= 18 && p.getAge() <= 25
+                p.gender == Person.Sex.MALE && p.getAge() >= 18 && p.getAge() <= 25
         );
         // Lambda using a standard functional generic interface java.util.function.Predicate<T>
         //Predicate<T> has one abstract method boolean test(T t) --- conventional param name -----> tester
 
         processPersonsWithConsumer(personList,
-                p ->  p.gender == Person.Sex.MALE && p.getAge() >= 18 && p.getAge() <= 25,
+                p -> p.gender == Person.Sex.MALE && p.getAge() >= 18 && p.getAge() <= 25,
                 p -> p.printPerson());
         //Consumer<T> void accept(T t) --- conventional param name -----> block
 
@@ -84,7 +82,7 @@ public class Main {
                 p -> p.gender == Person.Sex.MALE && p.getAge() >= 18 && p.getAge() <= 25,
                 System.out::println,
                 Person::getEmailAddress); // same as above but using method refrences instead of lambda
-                // even thou getEmailAddress is not a static method we use the class type
+        // even thou getEmailAddress is not a static method we use the class type
 
         System.out.println("processPersonsWithFunction() not eligible");
         processPersonsWithFunction(personList,
@@ -94,16 +92,54 @@ public class Main {
 
         Predicate<Person> checkAge = p -> p.gender == Person.Sex.MALE && p.getAge() >= 18 && p.getAge() <= 25;
         Consumer<String> print = System.out::println;
-        Function<Person,String> getEmail= Person::getEmailAddress;
+        Function<Person, String> getEmail = Person::getEmailAddress;
 
         System.out.println("processPersonsWithFunction() with lambdas as variables");
-        processPersonsWithFunction(personList, checkAge, print, getEmail );
+        processPersonsWithFunction(personList, checkAge, print, getEmail);
 
+        // https://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html
 
+        System.out.println("\nStreams get Male sorted by email_______________");
+        personList.stream().filter(p -> p.gender == Person.Sex.MALE)
+                .sorted(Comparator.comparing(Person::getEmailAddress))
+                .map(Person::getEmailAddress)
+                .forEach(System.out::println);
 
+        System.out.println("\nGet Male by age");
+        personList.stream().filter(p -> p.gender == Person.Sex.MALE)
+                .sorted(Comparator.comparing(Person::getAge))
+                .map(p -> p.getName() + " " + p.getAge())
+                .forEach(System.out::println);
 
+        System.out.println("\nallmatch agreggate function");
+        System.out.println(
+                personList.stream().allMatch(p -> p.getEmailAddress().contains("@")));
 
+        System.out.println("\nfindAny, returns an object of type Optional ");
+        personList.stream().filter(p -> p.getName().contains("Jan"))
+                .findAny().ifPresent(System.out::println);
+        personList.stream().filter(p -> p.getName().contains("Fail"))
+                .findAny().ifPresent(System.out::println);
 
+        System.out.println("\nmap one element from the stream to another");
+        List<String> names = personList.stream().map(Person::getName).collect(Collectors.toList());
+        System.out.println(names);
+
+        System.out.println("\nreduce() repeatedly apply an operation on every element of the stream " +
+                "until a result is produced");
+        int[] nums = new int[]{5, 7, 8, 7, 5, 34, 3, 4, 5, 6, 7, 777};
+        int sum = Arrays.stream(nums).reduce(0, (a, b) -> a + b);
+        System.out.println("sum =" + sum);
+        int largest = Arrays.stream(nums).reduce(0, (a, b) -> b > a ? b : a);
+        //'a' is identity(a variable holding result, b is the element of the stream
+        int smallest = Arrays.stream(nums).reduce(Integer.MAX_VALUE, (a, b) -> b < a ? b : a);
+        System.out.println("find largest = " + largest);
+        System.out.println("find smallest = " + smallest);
+
+        System.out.println("\nStream boxing and int stream creation with sum");
+        List<Integer> numsInteger = Arrays.stream(nums).boxed().collect(Collectors.toList());
+        int sumInteger = numsInteger.stream().mapToInt(  Integer::intValue).sum();
+        System.out.println(sumInteger);
 
 
 
