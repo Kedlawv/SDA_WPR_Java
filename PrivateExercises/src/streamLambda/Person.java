@@ -3,6 +3,7 @@ package streamLambda;
 import java.time.LocalDate;
 
 
+
 public class Person {
 
     public enum Sex {
@@ -26,6 +27,14 @@ public class Person {
         return birthday.until(now).getYears();
     }
 
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    public void printPerson() {
+        System.out.println(name + " " + gender + " " + emailAddress);
+    }
+
 
     public LocalDate getBirthday() {
         return birthday;
@@ -41,5 +50,15 @@ public class Person {
 
     public String getName() {
         return name;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", birthday=" + birthday +
+                ", gender=" + gender +
+                ", emailAddress='" + emailAddress + '\'' +
+                '}';
     }
 }

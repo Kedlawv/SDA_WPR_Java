@@ -80,11 +80,12 @@ public class Main {
 
         silnia(7);
 
-        sumaISredniaDopokiNieZero(new int[]{3,4,5,56,67,0,3,4,5,6,7});
-        sumaISredniaDopokiNieZero(new int[]{1,2,3,0});
-        sumaISredniaDopokiNieZero(new int[]{0,1,2,3,4});
+        sumaISredniaDopokiNieZero(new int[]{3, 4, 5, 56, 67, 0, 3, 4, 5, 6, 7});
+        sumaISredniaDopokiNieZero(new int[]{1, 2, 3, 0});
+        sumaISredniaDopokiNieZero(new int[]{0, 1, 2, 3, 4});
+        sumaISredniaDopokiNieZero(new int[]{});
 
-        for(int i : (fibonnaci(30))){
+        for (int i : (fibonnaci(30))) {
             System.out.print(i + " ");
         }
 
@@ -99,23 +100,28 @@ public class Main {
         System.out.printf("Silnia %d to %d%n", n, silnia);
     }
 
-    public static void sumaISredniaDopokiNieZero(int[] tablicaN){
+    public static void sumaISredniaDopokiNieZero(int[] tablicaN) {
+        if (tablicaN.length == 0) {
+            System.out.println("Tablica jest pusta");
+            return;
+        }
+
         int iloscN = 0;
         double suma = 0;
-        for(int i = 0; i<tablicaN.length; i++){
-            if(tablicaN[i] == 0){
+        for (int i = 0; i < tablicaN.length; i++) {
+            if (tablicaN[i] == 0) {
                 break;
-            }else{
-                suma += ((Integer)tablicaN[i]).doubleValue();
+            } else {
+                suma += ((Integer) tablicaN[i]).doubleValue();
                 iloscN++;
             }
         }
-        System.out.println("Suma: " + suma +  " Srednia: " +
-                 (iloscN == 0 ? iloscN : suma / iloscN));
+        System.out.println("Suma: " + suma + " Srednia: " +
+                suma / iloscN);
     }
 
-    public static int[] fibonnaci(int n){
-        if(n <= 1 ){
+    public static int[] fibonnaci(int n) {
+        if (n <= 1) {
             return new int[]{1};
         }
 
@@ -124,8 +130,8 @@ public class Main {
         fib[1] = 1;
         fib[2] = 1;
 
-        for(int i = 3; i<n ; i++){
-            fib[i] = fib[i-1] + fib[i-2];
+        for (int i = 3; i < n; i++) {
+            fib[i] = fib[i - 1] + fib[i - 2];
         }
 
         return fib;
