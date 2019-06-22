@@ -1,6 +1,9 @@
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.NullAndEmptySource;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -41,9 +44,30 @@ class PostalCodeValidatorTest {
 
     }
 
+    @ParameterizedTest
+    @NullAndEmptySource
+    void falseIfEmptyOrNullAnottation(String postalCode){
+
+        boolean result = psValidator.isValidPostalCode(postalCode);
+
+        assertFalse(result);
+
+    }
+
+
+
+    @ParameterizedTest
+    @ValueSource(strings = {"324235234","3453462456","6586795673"})
+    void falseIfLongerThan6(String postalCode){
+
+        boolean result = psValidator.isValidPostalCode(postalCode);
+
+        assertFalse(result);
+    }
+
     @Test
-    void falseIfLongerThan6(){
-        postalCode = "1234567";
+    void falseIfNoDash(){
+        postalCode = "123456";
 
         boolean result = psValidator.isValidPostalCode(postalCode);
 
