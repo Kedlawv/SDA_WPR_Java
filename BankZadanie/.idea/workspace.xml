@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2df93773-db47-46ea-a09a-677c66f100d4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BankZadanie.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BankZadanie.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankZadanie/Bank.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankZadanie/Klient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankZadanie/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankZadanie/OszczednosciowyRachunek.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankZadanie/ROR.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankZadanie/Rachunek.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankZadanie/RodzajKonta.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankZadanie/ZlyStan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bank.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Klient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OszczednosciowyRachunek.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ROR.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rachunek.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RodzajKonta.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ZlyStan.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateExercises/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PrivateExercises/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateExercises/out/production/PrivateExercises/learn/localDateTime/Main.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/RachunekTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+            <state relative-caret-position="200">
+              <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#236#237#0" expanded="true" />
@@ -305,6 +285,14 @@
       <option name="presentableId" value="Default" />
       <updated>1559216630356</updated>
     </task>
+    <task id="LOCAL-00001" summary="Trying to write tests for the BankZadnie , changed to Maven">
+      <created>1561041325971</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561041325971</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -341,7 +329,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49932706" visible="true" weight="0.27878466" />
       <window_info id="Structure" order="1" sideWeight="0.50067294" side_tool="true" weight="0.26285347" />
@@ -354,12 +341,12 @@
       <window_info id="simpleUML" order="8" weight="0.32969153" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32827735" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32936078" />
@@ -373,6 +360,37 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="PlantUML" order="8" weight="0.32969153" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="Trying to write tests for the BankZadnie , changed to Maven" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to write tests for the BankZadnie , changed to Maven" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/BankZadanie.iml">
@@ -484,8 +502,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RachunekTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+        <state relative-caret-position="200">
+          <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#236#237#0" expanded="true" />
