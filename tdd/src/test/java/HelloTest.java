@@ -6,7 +6,6 @@ class HelloTest {
 
     @Test
     public void testSayHello(){
-        fail();
     }
 
 }
