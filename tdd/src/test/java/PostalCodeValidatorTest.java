@@ -46,7 +46,7 @@ class PostalCodeValidatorTest {
 
     @ParameterizedTest
     @NullAndEmptySource
-    void falseIfEmptyOrNullAnottation(String postalCode){
+    void falseIfEmptyOrNullAnotation(String postalCode){
 
         boolean result = psValidator.isValidPostalCode(postalCode);
 

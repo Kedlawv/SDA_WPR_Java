@@ -1,0 +1,2 @@
+log.tag=TAG
+log.maxLength=100
